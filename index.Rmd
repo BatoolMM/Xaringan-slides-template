@@ -1,0 +1,48 @@
+---
+title: "title"
+subtitle: "subtitle"
+author: "Batool Almarzouq"
+institute: ""
+date: "(updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "css/grayscale.css", "css/font.css", "ninjutsu"]
+    seal: false 
+    lib_dir: libs
+    nature:
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+      highlightStyle: solarized-light
+      highlightLanguage: ["r", "css", "yaml"]
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, servr.interval = 0.05)
+knitr::opts_chunk$set(collapse = TRUE, fig.retina = 3)
+library(xaringanExtra)
+library(xaringan)
+```
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+class: title-slide, center, top
+background-image: url(figs/landing2.png)
+background-size: contain
+background-position: bottom
+background-size: 90%
+
+
+#### `r rmarkdown::metadata$title`
+
+#### `r rmarkdown::metadata$author`- @batool664
+
+---
+
